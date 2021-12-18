@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 
         <!-- Bootstrap Css -->
         <link href="{% static 'css/bootstrap.min.css' %}" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -33,19 +33,19 @@
                         <div class="navbar-brand-box">
                             <a href="index.html" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{% static 'img/logo-sm.png' %}" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-dark.png" alt="" height="20">
+                                    <img src="{% static 'img/logo-dark.png' %}" alt="" height="20">
                                 </span>
                             </a>
 
                             <a href="index.html" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{% static 'img/logo-sm.png' %}" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-light.png" alt="" height="20">
+                                    <img src="{% static 'img/logo-light.png' %}" alt="" height="20">
                                 </span>
                             </a>
                         </div>
@@ -89,28 +89,28 @@
                         <div class="dropdown d-inline-block language-switch">
                             <button type="button" class="btn header-item waves-effect"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/images/flags/us.jpg" alt="Header Language" height="16">
+                                <img src="{% static 'img/us.jpg' %}" alt="Header Language" height="16">
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
                     
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                                    <img src="{% static 'img/spain.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                                    <img src="{% static 'img/germany.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                                    <img src="{% static 'img/italy.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                    <img src="{% static 'img/russia.jpg' %}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
                                 </a>
                             </div>
                         </div>
@@ -125,19 +125,19 @@
                                     <div class="row g-0">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/github.png" alt="Github">
+                                                <img src="{% static 'img/github.jpg' %}" alt="Github">
                                                 <span>GitHub</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                                <img src="{% static 'img/bitbucket.jpg' %}" alt="bitbucket">
                                                 <span>Bitbucket</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                                <img src="{% static 'img/dribble.jpg' %}" alt="dribbble">
                                                 <span>Dribbble</span>
                                             </a>
                                         </div>
@@ -146,19 +146,19 @@
                                     <div class="row g-0">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                                <img src="{% static 'img/dropbox.jpg' %}" alt="dropbox">
                                                 <span>Dropbox</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
+                                                <img src="{% static 'img/mail_chimp.jpg' %}" alt="mail_chimp">
                                                 <span>Mail Chimp</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/slack.png" alt="slack">
+                                                <img src="{% static 'img/slack.jpg' %}" alt="slack">
                                                 <span>Slack</span>
                                             </a>
                                         </div>
@@ -213,7 +213,7 @@
                                     <a href="javascript:void(0);" class="text-reset notification-item">
                                         <div class="d-flex align-items-start">
                                             <div class="flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                                <img src="{% static 'img/avatar-3.jpg' %}" class="rounded-circle avatar-xs" alt="user-pic">
                                             </div>
                                             <div class="flex-grow-1">
                                                 <h6 class="mb-1">James Lemire</h6>
@@ -246,7 +246,7 @@
                                     <a href="javascript:void(0);" class="text-reset notification-item">
                                         <div class="d-flex align-items-start">
                                             <div class="flex-shrink-0 me-3">
-                                                <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                                <img src="{% static 'img/avatar-4.jpg' %}" class="rounded-circle avatar-xs" alt="user-pic">
                                             </div>
                                             <div class="flex-grow-1">
                                                 <h6 class="mb-1">Salena Layfield</h6>
@@ -271,7 +271,7 @@
                         <div class="dropdown d-inline-block">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg"
+                                <img class="rounded-circle header-profile-user" src="{% static 'img/avatar-4.jpg' %}"
                                     alt="Header Avatar">
                                 <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15">Marcus</span>
                                 <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
@@ -445,7 +445,7 @@
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mt-4 mt-sm-0">
-                                                    <img src="assets/images/setup-analytics-amico.svg" class="img-fluid" alt="">
+                                                    <img src="{% static 'img/setup-analytics-amico.svg' %}" class="img-fluid" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -574,7 +574,7 @@
                                                 <table class="table table-borderless table-centered table-nowrap">
                                                     <tbody>
                                                         <tr>
-                                                            <td style="width: 20px;"><img src="assets/images/users/avatar-4.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td style="width: 20px;"><img src="{% static 'img/avatar-4.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Glenn Holden</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Nevada</p>
@@ -583,7 +583,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$250.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-5.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-5.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Lolita Hamill</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Texas</p>
@@ -592,7 +592,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$110.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-6.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-6.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Robert Mercer</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
@@ -601,7 +601,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$420.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-7.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Montana</p>
@@ -610,7 +610,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$120.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-8.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-8.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Colorado</p>
@@ -619,7 +619,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-success" data-feather="trending-up"></i>$112.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-2.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-2.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Marie Kim</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> Australia</p>
@@ -628,7 +628,7 @@
                                                             <td class="text-muted fw-semibold text-end"><i class="icon-xs icon me-2 text-danger" data-feather="trending-down"></i>$120.00</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td><img src="{% static 'img/avatar-1.jpg' %}" class="avatar-xs rounded-circle " alt="..."></td>
                                                             <td>
                                                                 <h6 class="font-size-15 mb-1 fw-normal">Sonya Henshaw</h6>
                                                                 <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> India</p>
@@ -1028,7 +1028,7 @@
 
                 <div class="p-4">
                     <div class="mb-2">
-                        <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
+                        <img src="{% static 'img/layout-1.jpg' %}" class="img-thumbnail" alt="layout images">
                     </div>
                     <div class="form-check form-switch mb-3">
                         <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
@@ -1070,21 +1070,22 @@
         <div class="rightbar-overlay"></div>
 
         <!-- JAVASCRIPT -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
-        <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-        <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/metisMenu.min.js' %}"></script>
+        <script src="{% static 'js/simplebar.min.js' %}"></script>
+        <script src="{% static 'js/waves.min.js' %}"></script>
+        <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
 
         <!-- apexcharts -->
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-
-        <script src="assets/js/pages/dashboard.init.js"></script>
+        <script src="{% static 'js/apexcharts.min.js' %}"></script>
+        
+        <script src="{% static 'js/dashboard.init.js' %}"></script>
 
         <!-- App js -->
-        <script src="assets/js/app.js"></script>
+        
+        <script src= "{% static 'js/app.js' %}"></script>
 
     </body>
 
